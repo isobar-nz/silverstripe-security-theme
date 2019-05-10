@@ -1,0 +1,88 @@
+@import "../mixins/focus";
+@import "../mixins/transition";
+
+// ======================================================
+// Checkbox
+// ======================================================
+
+:root {
+  --checkbox-accent: transparent none;
+  --checkbox-color: currentColor;
+  --checkbox-link-color: var(--brand-secondary-accent);
+  --checkbox-border-accent: var(--form-control-border-color);
+  --checkbox-border-radius: var(--form-control-border-radius);
+  --checkbox-border-width: var(--form-control-border-width);
+}
+
+.c-sst-checkbox {
+  $this: &;
+  $checkbox-size: 36px;
+
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  min-height: $checkbox-size;
+
+  // Children
+  // -------------------------------------------
+
+  &__indicator {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: $checkbox-size;
+    width: $checkbox-size;
+    background: var(--checkbox-accent);
+    color: var(--checkbox-color);
+    border: var(--checkbox-border-width) solid var(--checkbox-border-accent);
+    border-radius: var(--checkbox-border-radius);
+
+    > .c-sst-icon {
+      $size: $checkbox-size * 0.7;
+
+      @include transition;
+
+      color: var(--checkbox-color);
+      height: $size;
+      width: $size;
+      opacity: 0;
+      transition-property: opacity;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    padding-left: $checkbox-size + 15px;
+    display: block;
+
+    a {
+      color: var(--checkbox-link-color);
+    }
+  }
+
+  // Child Nodes
+  // -------------------------------------------
+
+  input {
+    margin: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &:focus ~ #{$this}__indicator {
+      --checkbox-border-accent: var(--palette-primary-500);
+
+      @include focus-style;
+    }
+
+    &:checked ~ #{$this}__indicator {
+      > .c-sst-icon {
+        opacity: 1;
+      }
+    }
+  }
+}

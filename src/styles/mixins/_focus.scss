@@ -1,0 +1,15 @@
+// ======================================================
+// Focus
+// ======================================================
+
+@mixin focus-style($color: var(--focus-accent)) {
+  outline: none;
+  box-shadow: 0 0 0 var(--focus-width) $color;
+}
+
+@mixin focus($color: var(--focus-accent)) {
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 var(--focus-width) $color;
+  }
+}

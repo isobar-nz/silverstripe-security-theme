@@ -1,0 +1,75 @@
+@import "../mixins/focus";
+
+// ======================================================
+// Form Control
+// ======================================================
+
+:root {
+  --form-control-accent: transparent none;
+  --form-control-color: currentColor;
+  --form-control-font-size: 22px;
+  --form-control-height: 60px;
+  --form-control-padding: 15px;
+  --form-control-border-radius: 5px;
+  --form-control-border-width: 2px;
+  --form-control-border-color: rgba(0, 0, 0, 0.14);
+}
+
+%form-control {
+  @include focus;
+
+  font-size: var(--form-control-font-size);
+  display: block;
+  width: 100%;
+  height: var(--form-control-height);
+  padding: var(--form-control-padding);
+  color: var(--form-control-color);
+  background: var(--form-control-accent) none; // Reset unusual Firefox-on-Android default style;
+  background-clip: border-box;
+  border: var(--form-control-border-width) solid var(--form-control-border-color);
+  appearance: none;
+  text-align: left;
+  white-space: nowrap;
+  border-radius: var(--form-control-border-radius);
+
+  // Unstyle the caret on `<select>`s in IE10+.
+  &::-ms-expand {
+    background-color: transparent;
+    border: 0;
+  }
+
+  &::placeholder {
+    color: var(--color-mamba);
+    opacity: 1; // Override Firefox's unusual default opacity;
+  }
+
+  &:focus {
+    --form-control-border-color: var(--palette-primary-500);
+  }
+
+  // States
+  // -------------------------------------------
+
+  &.is-disabled,
+  &:disabled,
+  &[readonly] {
+    // iOS fix for unreadable disabled content;
+    opacity: 1;
+    cursor: default;
+
+    &:focus {
+      --form-control-border-color: var(--palette-primary-500);
+
+      box-shadow: none;
+    }
+  }
+
+  // Modifiers
+  // -------------------------------------------
+
+  // Select element
+  &--select {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

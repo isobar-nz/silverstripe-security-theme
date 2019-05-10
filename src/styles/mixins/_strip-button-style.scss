@@ -1,0 +1,20 @@
+// ======================================================
+// Strip button styles
+// ======================================================
+//
+// Remove the default button styling.
+
+@mixin strip-button-style {
+  appearance: none;
+  padding: 0;
+  border-width: 0;
+  border-radius: 0;
+  background: transparent none;
+  color: currentColor;
+  text-align: left;
+  cursor: auto;
+
+  &:focus {
+    outline: none;
+  }
+}

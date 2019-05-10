@@ -1,0 +1,28 @@
+@import "../components/button";
+@import "../components/form-control";
+
+// ======================================================
+// Form
+// ======================================================
+
+.l-sst-form {
+  // Child Nodes
+  // -------------------------------------------
+
+  button,
+  input[type="button"],
+  input[type="submit"] {
+    @extend %button;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    @extend %form-control;
+  }
+
+  a {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+}

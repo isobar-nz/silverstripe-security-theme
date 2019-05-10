@@ -1,0 +1,30 @@
+// ======================================================
+// Heading
+// ======================================================
+
+.c-sst-heading {
+  @include focus;
+
+  display: block;
+  text-decoration: none;
+  text-align: inherit;
+
+  // Modifiers
+  // -------------------------------------------
+
+  &--h3 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  // Child Nodes
+  // -------------------------------------------
+
+  strong {
+    color: var(--brand-secondary-accent);
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

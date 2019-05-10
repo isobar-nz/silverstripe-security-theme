@@ -1,0 +1,70 @@
+@import "../mixins/focus";
+@import "../mixins/strip-button-style";
+@import "../mixins/transition";
+
+// ======================================================
+// Button
+// ======================================================
+
+:root {
+  --button-accent: var(--palette-primary-500);
+  --button-border-radius: 5px;
+  --button-border-width: 1px;
+  --button-border-color: var(--palette-primary-500);
+  --button-color: var(--palette-base-100);
+  --button-width: auto;
+  --button-padding: 0.75em 1.2em;
+  --button-min-height: auto;
+  --button-icon-size: 1.6em;
+  --button-font-size: 1em;
+}
+
+%button {
+  $this: &;
+
+  @include focus;
+  @include strip-button-style;
+  @include transition;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: var(--button-font-size);
+  background: var(--button-accent);
+  color: var(--button-color);
+  border-radius: var(--button-border-radius);
+  padding: var(--button-padding);
+  min-height: var(--button-min-height);
+  width: var(--button-width);
+  border: var(--button-border-width) solid var(--button-border-color);
+  text-decoration: none;
+  font-weight: 500;
+  white-space: normal;
+  z-index: 1;
+  line-height: 1.5;
+  transition-property: color, background-color, border-color, opacity;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  // States
+  // -------------------------------------------
+
+  &:disabled,
+  &[disabled="disabled"],
+  &.is-loading {
+    opacity: 0.25;
+    cursor: not-allowed;
+
+    &.is-active,
+    &:hover,
+    &:focus {
+      --button-accent: var(--brand-base-accent);
+      --button-color: var(--brand-base-color);
+    }
+  }
+}

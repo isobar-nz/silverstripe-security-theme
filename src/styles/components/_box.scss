@@ -1,0 +1,26 @@
+// ======================================================
+// Box
+// ======================================================
+
+:root {
+  --box-accent: var(--palette-base-100);
+  --box-border-radius: 5px;
+  --box-border-width: 0;
+  --box-border-color: rgba(0, 0, 0, 0.14);
+  --box-padding: 30px;
+  --box-shadow: none;
+}
+
+.c-sst-box {
+  color: currentColor;
+  padding: var(--box-padding);
+  border: var(--box-border-width) solid var(--box-border-color);
+  border-radius: var(--box-border-radius);
+  box-shadow: var(--box-box-shadow);
+  background: var(--box-accent);
+
+  @media (min-width: 1200px) {
+    --box-border-width: 1px;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+  }
+}

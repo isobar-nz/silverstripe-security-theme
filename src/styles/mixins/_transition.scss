@@ -1,0 +1,21 @@
+// ======================================================
+// Transition
+// ======================================================
+//
+// Remove transitions if the user has specified
+// that they prefer reduced motion.
+//
+// @param $transition string - Custom transition
+
+@mixin transition($transition...) {
+  @if length($transition) == 0 {
+    transition: var(--transition-duration-base);
+  } @else {
+    transition: $transition;
+  }
+
+  /* stylelint-disable-next-line media-feature-name-no-unknown */
+  @media screen and (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}

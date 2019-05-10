@@ -1,0 +1,27 @@
+// ======================================================
+// Security
+// ======================================================
+
+:root {
+  --sst-security-margin: 0;
+}
+
+.l-sst-security {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 1200px) {
+    --sst-security-margin: 20px;
+  }
+
+  // Children
+  // -------------------------------------------
+
+  &__content {
+    width: 100%;
+    max-width: 500px;
+    margin: var(--sst-security-margin);
+  }
+}
