@@ -12,3 +12,8 @@
     SilverStripe\Security\Security:
       template_main: LittleGiant\SilverstripeSecurityTheme\SecurityPage
 ```
+
+### To-do
+
+- Add ability to upload a logo.
+- Add the ability to update colours.
