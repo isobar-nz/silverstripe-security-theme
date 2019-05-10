@@ -3,14 +3,16 @@
 ## Usage
 
 ```yml
-    ---
-    Name: app-security-theme
-    After:
-    - '#coresecurity'
-    ---
-    
-    SilverStripe\Security\Security:
-      template_main: LittleGiant\SilverstripeSecurityTheme\SecurityPage
+
+---
+Name: app-security-theme
+After:
+- '#coresecurity'
+---
+
+SilverStripe\Security\Security:
+  template_main: LittleGiant\SilverstripeSecurityTheme\SecurityPage
+
 ```
 
 ### To-do
