@@ -1,6 +1,6 @@
 CURRENT_DIR = ${CURDIR}
 BIN = node_modules/.bin
-SRC_DIR = $(CURRENT_DIR)/src
+SRC_DIR = $(CURRENT_DIR)/client/src
 PRODUCTION_DIR = $(CURRENT_DIR)/client/dist
 
 default: build

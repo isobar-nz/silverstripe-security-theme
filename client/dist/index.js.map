@@ -1,1 +1,1 @@
-{"version":3,"sources":["index.js"],"names":["console","log"],"mappings":";;;AAEA,aAFA,QAAA,wBAEAA,QAAQC,IAAI","file":"index.js","sourceRoot":"../../src/javascript","sourcesContent":["import '../styles/index.scss';\n\nconsole.log('Hi');\n"]}
+{"version":3,"sources":["index.js"],"names":["console","log"],"mappings":";;;AAEA,aAFA,QAAA,wBAEAA,QAAQC,IAAI","file":"index.js","sourceRoot":"../src/javascript","sourcesContent":["import '../styles/index.scss';\n\nconsole.log('Hi');\n"]}
