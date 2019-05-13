@@ -13,6 +13,7 @@
   --form-control-border-radius: 5px;
   --form-control-border-width: 2px;
   --form-control-border-color: rgba(0, 0, 0, 0.14);
+  --form-control-border-color-active: var(--palette-primary-500);
 }
 
 %form-control {
@@ -44,7 +45,7 @@
   }
 
   &:focus {
-    --form-control-border-color: var(--palette-primary-500);
+    --form-control-border-color: var(--form-control-border-color-active);
   }
 
   // States
@@ -58,7 +59,7 @@
     cursor: default;
 
     &:focus {
-      --form-control-border-color: var(--palette-primary-500);
+      --form-control-border-color: var(--form-control-border-color);
 
       box-shadow: none;
     }

@@ -4,6 +4,12 @@
 
 :root {
   --sst-security-margin: 0;
+  --sst-security-gutter: 30px;
+  --sst-security-padding: 15px 0;
+
+  @media (min-width: 1200px) {
+    --sst-security-gutter: 60px;
+  }
 }
 
 .l-sst-security {
@@ -11,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: var(--sst-security-padding);
 
   @media (min-width: 1200px) {
     --sst-security-margin: 20px;
@@ -23,5 +30,9 @@
     width: 100%;
     max-width: 500px;
     margin: var(--sst-security-margin);
+
+    > * + * {
+      margin-top: var(--sst-security-gutter);
+    }
   }
 }

@@ -1,0 +1,31 @@
+// ======================================================
+// Logo
+// ======================================================
+
+:root {
+  --logo-max-width: 100%;
+  --logo-padding: 0 15px;
+
+  @media (min-width: 1200px) {
+    --logo-padding: 0 30px;
+  }
+}
+
+.c-sst-logo {
+  display: flex;
+  justify-content: center;
+  padding: var(--logo-padding);
+
+  // Children
+  // -------------------------------------------
+
+  &__link {
+    max-width: var(--logo-max-width);
+    display: block;
+  }
+
+  &__item {
+    max-width: 100%;
+    height: auto;
+  }
+}

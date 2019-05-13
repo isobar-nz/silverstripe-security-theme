@@ -8,7 +8,7 @@
           <% if $SuccessMessage %>
             {$SuccessMessage}
           <% else %>
-            Your form submission was saved successfully.
+            <%t SilverStripeSecurityTheme.BaseFormSuccessMessage 'Your form submission was saved successfully.' %>
           <% end_if %>
         </p>
       <% end_if %>

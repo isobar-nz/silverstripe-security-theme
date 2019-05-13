@@ -2,6 +2,14 @@
 // Heading
 // ======================================================
 
+:root {
+  --heading-h3-font-size: 22px;
+
+  @media (min-width: 1200px) {
+    --heading-h3-font-size: 36px;
+  }
+}
+
 .c-sst-heading {
   @include focus;
 
@@ -13,8 +21,8 @@
   // -------------------------------------------
 
   &--h3 {
-    font-size: 22px;
-    font-weight: 500;
+    font-size: var(--heading-h3-font-size);
+    font-weight: 600;
   }
 
   // Child Nodes

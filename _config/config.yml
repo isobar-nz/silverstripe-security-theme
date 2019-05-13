@@ -1,1 +1,7 @@
+---
+Name: little-giant-silverstripe-security-theme
+---
 
+SilverStripe\Security\Security:
+  extensions:
+    - LittleGiant\SilverStripeSecurityTheme\Extensions\SecurityDataExtension
