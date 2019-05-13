@@ -1,9 +1,5 @@
 # SilverStripe Security Theme
 
-## Screenshot
-
-![Screenshot](https://github.com/littlegiant/silverstripe-security-theme/blob/master/screenshot.png)
-
 ## Usage
 
 ```yml
@@ -25,3 +21,7 @@ SilverStripe\Security\Security:
   input_active_border_color: '#3f51b5' # Optional input:focused border color
 
 ```
+
+## Screenshot
+
+![Screenshot](https://github.com/littlegiant/silverstripe-security-theme/blob/master/screenshot.png)
