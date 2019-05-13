@@ -6,13 +6,13 @@
 // ======================================================
 
 :root {
-  --checkbox-accent: transparent none;
-  --checkbox-color: currentColor;
-  --checkbox-link-color: var(--brand-secondary-accent);
-  --checkbox-border-color: var(--form-control-border-color);
-  --checkbox-border-color-active: var(--palette-primary-500);
-  --checkbox-border-radius: var(--form-control-border-radius);
-  --checkbox-border-width: var(--form-control-border-width);
+  --sst-checkbox-accent: transparent none;
+  --sst-checkbox-color: currentColor;
+  --sst-checkbox-link-color: var(--sst-brand-secondary-accent);
+  --sst-checkbox-border-color: var(--sst-form-control-border-color);
+  --sst-checkbox-border-color-active: var(--sst-palette-primary-500);
+  --sst-checkbox-border-radius: var(--sst-form-control-border-radius);
+  --sst-checkbox-border-width: var(--sst-form-control-border-width);
 }
 
 .c-sst-checkbox {
@@ -37,17 +37,17 @@
     position: absolute;
     height: $checkbox-size;
     width: $checkbox-size;
-    background: var(--checkbox-accent);
-    color: var(--checkbox-color);
-    border: var(--checkbox-border-width) solid var(--checkbox-border-color);
-    border-radius: var(--checkbox-border-radius);
+    background: var(--sst-checkbox-accent);
+    color: var(--sst-checkbox-color);
+    border: var(--sst-checkbox-border-width) solid var(--sst-checkbox-border-color);
+    border-radius: var(--sst-checkbox-border-radius);
 
     > .c-sst-icon {
       $size: $checkbox-size * 0.7;
 
       @include transition;
 
-      color: var(--checkbox-color);
+      color: var(--sst-checkbox-color);
       height: $size;
       width: $size;
       opacity: 0;
@@ -61,7 +61,7 @@
     display: block;
 
     a {
-      color: var(--checkbox-link-color);
+      color: var(--sst-checkbox-link-color);
     }
   }
 
@@ -75,7 +75,7 @@
     opacity: 0;
 
     &:focus ~ #{$this}__indicator {
-      --checkbox-border-color: var(--checkbox-border-color-active);
+      --sst-checkbox-border-color: var(--sst-checkbox-border-color-active);
 
       @include focus-style;
     }

@@ -3,10 +3,10 @@
 // ======================================================
 
 :root {
-  --heading-h3-font-size: 22px;
+  --sst-heading-h3-font-size: 22px;
 
   @media (min-width: 1200px) {
-    --heading-h3-font-size: 36px;
+    --sst-heading-h3-font-size: 36px;
   }
 }
 
@@ -21,7 +21,7 @@
   // -------------------------------------------
 
   &--h3 {
-    font-size: var(--heading-h3-font-size);
+    font-size: var(--sst-heading-h3-font-size);
     font-weight: 600;
   }
 
@@ -29,7 +29,7 @@
   // -------------------------------------------
 
   strong {
-    color: var(--brand-secondary-accent);
+    color: var(--sst-brand-secondary-accent);
   }
 
   a {

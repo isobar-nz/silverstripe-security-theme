@@ -9,8 +9,8 @@
 }
 
 ::selection {
-  color: var(--palette-base-100);
-  background-color: var(--palette-base-900);
+  color: var(--sst-palette-base-100);
+  background-color: var(--sst-palette-base-900);
 }
 
 
@@ -19,8 +19,8 @@
 }
 
 html {
-  font-size: var(--root-font-size);
-  font-family: var(--font-family);
+  font-size: var(--sst-root-font-size);
+  font-family: var(--sst-font-family);
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
@@ -30,8 +30,8 @@ body {
   margin: 0;
   width: 100%;
   text-align: left;
-  color: var(--body-color);
-  background: var(--body-accent);
+  color: var(--sst-body-color);
+  background: var(--sst-body-accent);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -69,7 +69,7 @@ a {
 
 strong {
   font-weight: bold;
-  font-family: var(--font-family);
+  font-family: var(--sst-font-family);
 }
 
 img {

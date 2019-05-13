@@ -3,8 +3,8 @@
 // ======================================================
 
 :root {
-  --form-group-addon-color: var(--color-mamba);
-  --form-group-gutter: 10px;
+  --sst-form-group-addon-color: var(--sst-color-mamba);
+  --sst-form-group-gutter: 10px;
 }
 
 .l-sst-form-group {
@@ -22,7 +22,7 @@
 
   &__field {
     > * + * {
-      margin-top: var(--form-group-gutter);
+      margin-top: var(--sst-form-group-gutter);
     }
   }
 }

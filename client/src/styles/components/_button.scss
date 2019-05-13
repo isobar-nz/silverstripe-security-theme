@@ -7,16 +7,16 @@
 // ======================================================
 
 :root {
-  --button-accent: var(--palette-primary-500);
-  --button-border-radius: 5px;
-  --button-border-width: 1px;
-  --button-border-color: var(--palette-primary-500);
-  --button-color: var(--palette-base-100);
-  --button-width: auto;
-  --button-padding: 0.75em 1.2em;
-  --button-min-height: auto;
-  --button-icon-size: 1.6em;
-  --button-font-size: 1em;
+  --sst-button-accent: var(--sst-palette-primary-500);
+  --sst-button-border-radius: 5px;
+  --sst-button-border-width: 1px;
+  --sst-button-border-color: var(--sst-palette-primary-500);
+  --sst-button-color: var(--sst-palette-base-100);
+  --sst-button-width: auto;
+  --sst-button-padding: 0.75em 1.2em;
+  --sst-button-min-height: auto;
+  --sst-button-icon-size: 1.6em;
+  --sst-button-font-size: 1em;
 }
 
 %button {
@@ -31,14 +31,14 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: var(--button-font-size);
-  background: var(--button-accent);
-  color: var(--button-color);
-  border-radius: var(--button-border-radius);
-  padding: var(--button-padding);
-  min-height: var(--button-min-height);
-  width: var(--button-width);
-  border: var(--button-border-width) solid var(--button-border-color);
+  font-size: var(--sst-button-font-size);
+  background: var(--sst-button-accent);
+  color: var(--sst-button-color);
+  border-radius: var(--sst-button-border-radius);
+  padding: var(--sst-button-padding);
+  min-height: var(--sst-button-min-height);
+  width: var(--sst-button-width);
+  border: var(--sst-button-border-width) solid var(--sst-button-border-color);
   text-decoration: none;
   font-weight: 500;
   white-space: normal;
@@ -63,8 +63,8 @@
     &.is-active,
     &:hover,
     &:focus {
-      --button-accent: var(--brand-base-accent);
-      --button-color: var(--brand-base-color);
+      --sst-button-accent: var(--sst-brand-base-accent);
+      --sst-button-color: var(--sst-brand-base-color);
     }
   }
 }

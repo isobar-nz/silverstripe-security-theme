@@ -5,33 +5,33 @@
 // ======================================================
 
 :root {
-  --form-control-accent: transparent none;
-  --form-control-color: currentColor;
-  --form-control-font-size: 22px;
-  --form-control-height: 60px;
-  --form-control-padding: 15px;
-  --form-control-border-radius: 5px;
-  --form-control-border-width: 2px;
-  --form-control-border-color: rgba(0, 0, 0, 0.14);
-  --form-control-border-color-active: var(--palette-primary-500);
+  --sst-form-control-accent: transparent none;
+  --sst-form-control-color: currentColor;
+  --sst-form-control-font-size: 22px;
+  --sst-form-control-height: 60px;
+  --sst-form-control-padding: 15px;
+  --sst-form-control-border-radius: 5px;
+  --sst-form-control-border-width: 2px;
+  --sst-form-control-border-color: rgba(0, 0, 0, 0.14);
+  --sst-form-control-border-color-active: var(--sst-palette-primary-500);
 }
 
 %form-control {
   @include focus;
 
-  font-size: var(--form-control-font-size);
+  font-size: var(--sst-form-control-font-size);
   display: block;
   width: 100%;
-  height: var(--form-control-height);
-  padding: var(--form-control-padding);
-  color: var(--form-control-color);
-  background: var(--form-control-accent) none; // Reset unusual Firefox-on-Android default style;
+  height: var(--sst-form-control-height);
+  padding: var(--sst-form-control-padding);
+  color: var(--sst-form-control-color);
+  background: var(--sst-form-control-accent) none; // Reset unusual Firefox-on-Android default style;
   background-clip: border-box;
-  border: var(--form-control-border-width) solid var(--form-control-border-color);
+  border: var(--sst-form-control-border-width) solid var(--sst-form-control-border-color);
   appearance: none;
   text-align: left;
   white-space: nowrap;
-  border-radius: var(--form-control-border-radius);
+  border-radius: var(--sst-form-control-border-radius);
 
   // Unstyle the caret on `<select>`s in IE10+.
   &::-ms-expand {
@@ -40,12 +40,12 @@
   }
 
   &::placeholder {
-    color: var(--color-mamba);
+    color: var(--sst-color-mamba);
     opacity: 1; // Override Firefox's unusual default opacity;
   }
 
   &:focus {
-    --form-control-border-color: var(--form-control-border-color-active);
+    --sst-form-control-border-color: var(--sst-form-control-border-color-active);
   }
 
   // States
@@ -59,7 +59,7 @@
     cursor: default;
 
     &:focus {
-      --form-control-border-color: var(--form-control-border-color);
+      --sst-form-control-border-color: var(--sst-form-control-border-color);
 
       box-shadow: none;
     }

@@ -3,59 +3,59 @@
 // ==================================================
 
 :root {
-  --color-white: #fff;
-  --color-gallery: #fefefefe;
-  --color-alto: #e0e0e0;
-  --color-silver: #bdbdbd;
-  --color-silver-chalice: #9e9e9e;
-  --color-boulder: #757575;
-  --color-dove-gray: #616161;
-  --color-tundora: #424242;
-  --color-mine-shaft: #212121;
-  --color-black: #000;
+  --sst-color-white: #fff;
+  --sst-color-gallery: #fefefefe;
+  --sst-color-alto: #e0e0e0;
+  --sst-color-silver: #bdbdbd;
+  --sst-color-silver-chalice: #9e9e9e;
+  --sst-color-boulder: #757575;
+  --sst-color-dove-gray: #616161;
+  --sst-color-tundora: #424242;
+  --sst-color-mine-shaft: #212121;
+  --sst-color-black: #000;
 
-  --color-periwinkle-gray: #c5cae9;
-  --color-cold-purple: #9fa8da;
-  --color-moody-blue: #7986cb;
-  --color-indigo: #5c6bc0;
-  --color-san-marino: #3f51b5;
-  --color-sapphire: #3949ab;
-  --color-bay-of-many: #303f9f;
-  --color-jacksons-purple: #283593;
-  --color-lucky-point: #1a237e;
+  --sst-color-periwinkle-gray: #c5cae9;
+  --sst-color-cold-purple: #9fa8da;
+  --sst-color-moody-blue: #7986cb;
+  --sst-color-indigo: #5c6bc0;
+  --sst-color-san-marino: #3f51b5;
+  --sst-color-sapphire: #3949ab;
+  --sst-color-bay-of-many: #303f9f;
+  --sst-color-jacksons-purple: #283593;
+  --sst-color-lucky-point: #1a237e;
 
-  --palette-base-100: var(--color-white);
-  --palette-base-200: var(--color-gallery);
-  --palette-base-300: var(--color-alto);
-  --palette-base-400: var(--color-silver);
-  --palette-base-500: var(--color-silver-chalice);
-  --palette-base-600: var(--color-boulder);
-  --palette-base-700: var(--color-dove-gray);
-  --palette-base-800: var(--color-tundora);
-  --palette-base-900: var(--color-mine-shaft);
+  --sst-palette-base-100: var(--sst-color-white);
+  --sst-palette-base-200: var(--sst-color-gallery);
+  --sst-palette-base-300: var(--sst-color-alto);
+  --sst-palette-base-400: var(--sst-color-silver);
+  --sst-palette-base-500: var(--sst-color-silver-chalice);
+  --sst-palette-base-600: var(--sst-color-boulder);
+  --sst-palette-base-700: var(--sst-color-dove-gray);
+  --sst-palette-base-800: var(--sst-color-tundora);
+  --sst-palette-base-900: var(--sst-color-mine-shaft);
 
-  --palette-primary-100: var(--color-periwinkle-gray);
-  --palette-primary-200: var(--color-cold-purple);
-  --palette-primary-300: var(--color-moody-blue);
-  --palette-primary-400: var(--color-indigo);
-  --palette-primary-500: var(--color-san-marino);
-  --palette-primary-600: var(--color-sapphire);
-  --palette-primary-700: var(--color-bay-of-many);
-  --palette-primary-800: var(--color-jacksons-purple);
-  --palette-primary-900: var(--color-lucky-point);
+  --sst-palette-primary-100: var(--sst-color-periwinkle-gray);
+  --sst-palette-primary-200: var(--sst-color-cold-purple);
+  --sst-palette-primary-300: var(--sst-color-moody-blue);
+  --sst-palette-primary-400: var(--sst-color-indigo);
+  --sst-palette-primary-500: var(--sst-color-san-marino);
+  --sst-palette-primary-600: var(--sst-color-sapphire);
+  --sst-palette-primary-700: var(--sst-color-bay-of-many);
+  --sst-palette-primary-800: var(--sst-color-jacksons-purple);
+  --sst-palette-primary-900: var(--sst-color-lucky-point);
 
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  --root-font-size: 16px;
+  --sst-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --sst-root-font-size: 16px;
 
-  --transition-duration-base: 200ms;
+  --sst-transition-duration-base: 200ms;
 
-  --focus-width: 3px;
-  --focus-accent: var(--palette-primary-200);
+  --sst-focus-width: 3px;
+  --sst-focus-accent: var(--sst-palette-primary-200);
 
-  --body-accent: var(--palette-base-100);
-  --body-color: var(--palette-base-800);
+  --sst-body-accent: var(--sst-palette-base-100);
+  --sst-body-color: var(--sst-palette-base-800);
 
   @media (min-width: 1200px) {
-    --body-accent: var(--palette-base-200);
+    --sst-body-accent: var(--sst-palette-base-200);
   }
 }

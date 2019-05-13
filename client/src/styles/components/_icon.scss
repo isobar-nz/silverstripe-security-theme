@@ -5,15 +5,15 @@
 // ======================================================
 
 :root {
-  --icon-size: 1.2em;
+  --sst-icon-size: 1.2em;
 }
 
 .c-sst-icon {
   @include strip-button-style;
 
   display: inline-block;
-  width: var(--icon-size);
-  height: var(--icon-size);
+  width: var(--sst-icon-size);
+  height: var(--sst-icon-size);
   color: currentColor;
   text-transform: none;
   vertical-align: middle;

@@ -44,43 +44,43 @@ class SecurityDataExtension extends DataExtension
          * DOM nodes that have a focus state.
          */
         if ($focusAccent = $config->focus_accent) {
-            $array[] = "--focus-accent: $focusAccent;";
+            $array[] = "--sst-focus-accent: $focusAccent;";
         }
 
         /**
          * The max width of the logo component
          */
         if ($logoWidth = $config->logo_width) {
-            $array[] = "--logo-max-width: {$logoWidth}px;";
+            $array[] = "--sst-logo-max-width: {$logoWidth}px;";
         }
 
         /**
          * The button background
          */
         if ($buttonAccent = $config->button_accent) {
-            $array[] = "--button-accent: $buttonAccent;";
+            $array[] = "--sst-button-accent: $buttonAccent;";
         }
 
         /**
          * The button color
          */
         if ($buttonColor = $config->button_color) {
-            $array[] = "--button-color: $buttonColor;";
+            $array[] = "--sst-button-color: $buttonColor;";
         }
 
         /**
          * The button border color
          */
         if ($buttonBorderColor = $config->button_border_color) {
-            $array[] = "--button-border-color: $buttonBorderColor;";
+            $array[] = "--sst-button-border-color: $buttonBorderColor;";
         }
 
         /**
          * the button border color when focused
          */
         if ($inputActiveBorderColor = $config->input_active_border_color) {
-            $array[] = "--form-control-border-color-active: $inputActiveBorderColor;";
-            $array[] = "--checkbox-border-color-active: $inputActiveBorderColor;";
+            $array[] = "--sst-form-control-border-color-active: $inputActiveBorderColor;";
+            $array[] = "--sst-checkbox-border-color-active: $inputActiveBorderColor;";
         }
 
         $implodedArray = implode('', $array);

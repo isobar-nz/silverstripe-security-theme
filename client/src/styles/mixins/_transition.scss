@@ -9,7 +9,7 @@
 
 @mixin transition($transition...) {
   @if length($transition) == 0 {
-    transition: var(--transition-duration-base);
+    transition: var(--sst-transition-duration-base);
   } @else {
     transition: $transition;
   }

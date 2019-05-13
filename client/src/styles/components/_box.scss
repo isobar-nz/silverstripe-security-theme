@@ -3,34 +3,34 @@
 // ======================================================
 
 :root {
-  --box-accent: var(--palette-base-100);
-  --box-border-radius: 5px;
-  --box-border-width: 0;
-  --box-border-color: rgba(0, 0, 0, 0.14);
-  --box-padding: 15px;
-  --box-box-shadow: none;
-  --box-gutter: 15px;
+  --sst-box-accent: var(--sst-palette-base-100);
+  --sst-box-border-radius: 5px;
+  --sst-box-border-width: 0;
+  --sst-box-border-color: rgba(0, 0, 0, 0.14);
+  --sst-box-padding: 15px;
+  --sst-box-box-shadow: none;
+  --sst-box-gutter: 15px;
 
   @media (min-width: 1200px) {
-    --box-gutter: 40px;
-    --box-border-width: 1px;
-    --box-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-    --box-padding: 30px;
+    --sst-box-gutter: 40px;
+    --sst-box-border-width: 1px;
+    --sst-box-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    --sst-box-padding: 30px;
   }
 }
 
 .c-sst-box {
   color: currentColor;
-  padding: var(--box-padding);
-  border: var(--box-border-width) solid var(--box-border-color);
-  border-radius: var(--box-border-radius);
-  box-shadow: var(--box-box-shadow);
-  background: var(--box-accent);
+  padding: var(--sst-box-padding);
+  border: var(--sst-box-border-width) solid var(--sst-box-border-color);
+  border-radius: var(--sst-box-border-radius);
+  box-shadow: var(--sst-box-box-shadow);
+  background: var(--sst-box-accent);
 
   // Child Nodes
   // -------------------------------------------
 
   > * + * {
-    margin-top: var(--box-gutter);
+    margin-top: var(--sst-box-gutter);
   }
 }
