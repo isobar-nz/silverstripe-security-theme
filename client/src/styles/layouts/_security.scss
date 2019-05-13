@@ -5,10 +5,11 @@
 :root {
   --sst-security-margin: 0;
   --sst-security-gutter: 30px;
-  --sst-security-padding: 15px 0;
+  --sst-security-padding: 0;
 
   @media (min-width: 1200px) {
     --sst-security-gutter: 60px;
+    --sst-security-padding: 15px 0;
   }
 }
 
