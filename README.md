@@ -1,5 +1,11 @@
 # SilverStripe Security Theme
 
+[![Latest Stable Version](https://poser.pugx.org/littlegiant/silverstripe-security-theme/v/stable)](https://packagist.org/packages/littlegiant/silverstripe-security-theme)
+[![Total Downloads](https://poser.pugx.org/littlegiant/silverstripe-security-theme/downloads)](https://packagist.org/packages/littlegiant/silverstripe-security-theme)
+[![Monthly Downloads](https://poser.pugx.org/littlegiant/silverstripe-security-theme/d/monthly)](https://packagist.org/packages/littlegiant/silverstripe-security-theme)
+
+Sick of styling your admin login form? Me too, use this instead.
+
 ## Usage
 
 ```yml
