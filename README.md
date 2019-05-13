@@ -17,7 +17,7 @@ After:
 ---
 
 SilverStripe\Security\Security:
-  template_main: LittleGiant\SilverstripeSecurityTheme\SecurityPage
+  template_main: LittleGiant\SilverStripeSecurityTheme\SecurityPage
   logo: 'path/to/your/image.png' # Optional logo image (supports bitmaps)
   logo_width: 100 # Optional width constraint
   focus_accent: '#9fa8da' # Optional focused border color
