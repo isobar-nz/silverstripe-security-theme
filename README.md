@@ -6,6 +6,12 @@
 
 Sick of styling your admin login form? Me too, use this instead.
 
+## Installation
+
+```shell
+composer require littlegiant/silverstripe-security-theme
+```
+
 ## Usage
 
 ```yml
