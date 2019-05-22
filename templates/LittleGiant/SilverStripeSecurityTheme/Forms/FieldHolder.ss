@@ -3,11 +3,11 @@
 <% else %>
   <div id="{$Name}" class="l-sst-form-group l-sst-form-group--{$Type}<% if $Message %> has-message<% end_if %>">
     <% if $Type == 'checkbox' %>
-      <% include LittleGiant/SilverstripeSecurityTheme/Forms/Fields/Checkbox %>
+      <% include LittleGiant/SilverStripeSecurityTheme/Forms/Fields/Checkbox %>
     <% else_if $Type == 'dropdown' %>
       <div class="l-sst-form-group__item">
         <div class="l-sst-form-group__field">
-          <% include LittleGiant/SilverstripeSecurityTheme/Forms/Fields/Select %>
+          <% include LittleGiant/SilverStripeSecurityTheme/Forms/Fields/Select %>
           <label for="{$ID}" class="c-sst-label">{$Title}</label>
         </div>
       </div>
