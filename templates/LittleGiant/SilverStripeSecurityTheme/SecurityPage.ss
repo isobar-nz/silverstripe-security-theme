@@ -27,7 +27,7 @@
       <h1 class="c-sst-heading c-sst-heading--h3">{$Title}</h1>
       <% if $Form %>
         <% with $Form %>
-          <% include LittleGiant/SilverstripeSecurityTheme/Form %>
+          <% include LittleGiant/SilverStripeSecurityTheme/Form %>
         <% end_with %>
       <% end_if %>
     </div>
